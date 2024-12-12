@@ -1,8 +1,8 @@
 # SE_OOP-assignment--1       [ Design a class ‘Complex ‘with data members for real and imaginary part. Provide default and
                               Parameterized constructors. Write a program to perform arithmetic operations of two complex numbers]
 
-/import java.util.;
-class Complex_No{3
+import java.util.*;
+class Complex_No{
     float real,img;//data member
     public Complex_No(){
 //default constructor
@@ -27,12 +27,12 @@ class Complex_No{3
 //real part of complex number
         img=(C1.img+C2.img);
 //img part of complex number
-        System.out.println("Addition of Complex Numbers =("+real+")+("+img+")i");
+ System.out.println("Addition of Complex Numbers =("+real+")+("+img+")i");
 //printing addition of two complex number
     }
     public void SubNumbers(Complex_No C1,Complex_No C2) {
 //subtraction of two complex number
-  float real,img;
+        float real,img;
         real=(C1.real-C2.real);
 //real part of complex number
         img=(C1.img-C2.img);
@@ -53,7 +53,7 @@ class Complex_No{3
     }
     public void DivNumbers(Complex_No C1,Complex_No C2) {
 //division of two complex number
-        float real,img;
+ float real,img;
         real=(C1.real*C2.real+C1.img*C2.img)/(C2.real*C2.real+C2.img*C2.img);
 //real part of complex number
         img=(C1.img*C2.real-C1.real*C2.img)/(C2.real*C2.real+C2.img*C2.img);
@@ -79,13 +79,13 @@ public class Main {
         num1=Sc.nextFloat();
         System.out.print("Enter img part of Second Number: b : ");
         num2=Sc.nextFloat();
-        Complex_No Com2=new Complex_No(num1,num2);
+           Complex_No Com2=new Complex_No(num1,num2);
         Sc.close();//closing scanner close
         System.out.print("\n");
         cal.Display(Com1,Com2);
 //calling display function
         System.out.print("\n");
-        cal.AddNumbers(Com1,Com2);
+   cal.AddNumbers(Com1,Com2);
 //calling addition function
         cal.SubNumbers(Com1,Com2);
 //calling subtraction function
@@ -93,5 +93,5 @@ public class Main {
 //calling multiplication function
         cal.DivNumbers(Com1, Com2);
 //calling division function
-    }
-}*/
+}
+}
